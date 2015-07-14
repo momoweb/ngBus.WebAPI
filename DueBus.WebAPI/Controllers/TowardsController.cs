@@ -22,6 +22,7 @@ namespace DueBus.WebAPI.Controllers
 
         [EnableCorsAttribute("http://192.168.0.7:8888, http://localhost:8888", "*", "*")]
         // GET: api/Towards/5
+        // To be replace by Database calls        
         public Towards Get(String lineName)
         {
             var towardsRepository = new TowardsRepository();

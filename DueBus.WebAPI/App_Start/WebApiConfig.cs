@@ -24,7 +24,12 @@ namespace DueBus.WebAPI
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}"
-                //routeTemplate: "api/{controller}/{lineName}",
+                //defaults: new { lineName = RouteParameter.Optional }
+            );
+
+            config.Routes.MapHttpRoute(
+                name: "StopListApi",
+                routeTemplate: "api/{controller}/{lineName}"
                 //defaults: new { lineName = RouteParameter.Optional }
             );
 

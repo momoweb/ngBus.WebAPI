@@ -6,14 +6,10 @@ using System.Web.Hosting;
 
 namespace APM.WebAPI.Models
 {
-    /// <summary>
-    /// Stores the data in a json file so that no database is required for this
-    /// sample application
-    /// </summary>
     public class TowardsRepository
     {
         /// <summary>
-        /// Retrieves the list of products.
+        /// Retrieves the list of towards.
         /// </summary>
         /// <returns></returns>
         internal List<Towards> Retrieve()
